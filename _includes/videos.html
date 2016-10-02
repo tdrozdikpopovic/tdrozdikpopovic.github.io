@@ -1,0 +1,33 @@
+<section class="section-videos">
+
+    <h3 id="videos">Videos</h3>
+
+    <div class="videos-mobile-nav">
+        {% for video in site.data.settings.videos %}
+           <span class="video-button {% if forloop.first %}active-video{% endif %}"></span>
+        {% endfor %}
+    </div>
+
+    <div class="videos-belt">
+        {% for video in site.data.settings.videos %}
+        <div class="video-unit {% if forloop.first %}active-video{% endif %}">
+            <div class="video-content">
+                <div class="video-content">
+                    <div class="video-quote-mark">{% include icons/icon-quote-mark.html %}</div>
+                    {{ video.title }}
+                    <div class="videoWrapper">
+                        <iframe src="http://www.youtube.com/embed/{{video.url}}?rel=0&hd=1" frameborder="0" width="640" height="480" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="video-controls">
+        <div class="video-control-next">{% include icons/icon-next.html %}</div>
+        <div class="video-control-prev">{% include icons/icon-prev.html %}</div>
+    </div>
+
+</section>

@@ -1,0 +1,170 @@
+.videoWrapper
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 25px
+  height: 0
+
+.videoWrapper iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.section-videos
+  position: relative
+
+.videos-belt
+  width: 100%
+  position: relative
+
+  .video-unit
+    max-width: 750px
+    margin: 50px auto
+    position: relative
+    z-index: 1
+    display: none
+
+    &.active-video
+      +display(flex)
+      @extend %#{$animation}
+
+    .video-face
+      min-width: 180px
+      text-align: center
+
+      img
+        max-width: 100px
+        border-radius: 50%
+
+
+      .video-name
+        display: block
+        text-transform: uppercase
+        font-weight: 400
+        letter-spacing: 1px
+
+      .video-title
+        font-style: normal
+        font-size: 12px
+        color: #999
+
+    .video-content
+      font-size: 18px
+      line-height: 36px
+      font-weight: 300
+      margin-top: -10px
+      position: relative
+      width: 90%
+
+
+
+
+// Logos
+.videos-logos
+  position: relative
+  z-index: 3
+  max-width: 750px
+  margin: 0px auto 100px
+  +display(flex)
+  +align-items(flex-end)
+  +justify-content(space-around)
+
+
+  .video-logo
+    cursor: pointer
+    margin: 0 20px 20px
+    padding-bottom: 20px
+    border-bottom: 4px solid transparent
+    opacity: 0.5
+
+    &.active-video
+      opacity: 1
+      border-bottom: 4px solid $accent
+
+
+.video-quote-mark
+  +position(absolute, -18px null null -15px)
+  +size(60px)
+  z-index: -1
+  opacity: 0.3
+
+  path
+    fill: $accent
+
+
+
+// Controls
+.video-controls
+  +position(absolute, 0px 0px 0px 0px)
+  z-index: 2
+
+  > div
+    +size(40px)
+    margin-top: -20px
+    cursor: pointer
+
+    path
+      fill: $accent
+
+  .video-control-next
+    +position(absolute, 50% 10px null null)
+
+  .video-control-prev
+    +position(absolute, 50% null null 10px)
+
+// videos-mobile-nav
+.videos-mobile-nav
+  text-align: center
+  position: relative
+  z-index: 3
+  display: none
+
+  span
+    display: inline-block
+    +size(16px)
+    border-radius: 50%
+    border: solid 2px $bgcolor
+    margin: 0px 10px
+    cursor: pointer
+
+    &.active-video
+      border-color: $accent
+
+
+
+
+@media (max-width: 850px)
+  .videos-logos
+    +flex-wrap(wrap)
+
+  .videos-belt
+    overflow-x: hidden
+
+    .video-unit.active-video
+      display: block
+      position: relative
+      margin-left: auto
+      left: auto
+
+      .video-face
+        margin-bottom: 30px
+
+      .video-content
+        padding: 0px 30px
+        max-width: 400px
+        margin: 0px auto
+
+      .video-quote-mark
+        left: 6px
+
+  .videos-logos
+    display: none
+
+  .videos-mobile-nav
+    display: block
+
+
+@media (max-width: 600px)
+  .video-controls
+    display: none

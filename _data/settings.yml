@@ -2,13 +2,14 @@
 # General Site Settings
 
 title: Teodora Drozdik-Popović
-description: Singer // Opera // Classical // Entrepreneur
+description: Mezzo-soprano
 email: tdrozdikpopovic@gmail.com
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
 
 menu:
 - {name: About Me, url: '#about-me'}
+- {name: Videos, url: '#videos'}
 - {name: Work, url: '#work'}
 - {name: Clients, url: '#clients'}
 - {name: Contact, url: '#contact'}
@@ -39,7 +40,7 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Travis specializes in making things** for human people.
+  **Teodora specializes** in moving the **audience**.
   Most of the things he makes are [digital interfaces](http://travisneilson.com){:target="_blank"},
   but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson){:target="_blank"}
   and [YouTube videos](http://youtube.com/user/devtipsfordesigners){:target="_blank"} about making codes happen.
@@ -54,6 +55,25 @@ skills:
 - {name: Visual Design, value: '5'}
 - {name: UX Design, value: '8'}
 - {name: Programming, value: '6'}
+
+#-------------------------------
+# Videos Section
+
+videos:
+- {title: 'This is a longer title explaining what you are about to see',
+   url: 'hkwbUn5KypA'}
+- {title: 'This is a longer title explaining what you are about to see',
+   url: 'ctlY8VfuS3E'}
+- {title: 'This is a longer title explaining what you are about to see',
+   url: 'dqXJ_iDSoDg'}
+- {title: 'This is a longer title explaining what you are about to see',
+   url: 'aOawmCeS4UI'}
+- {title: 'This is a longer title explaining what you are about to see',
+   url: 'B1S-zbhxde0'}
+- {title: 'This is a longer title explaining what you are about to see',
+   url: 'Jt0AYvP7Yqw'}
+- {title: 'This is a longer title explaining what you are about to see',
+   url: '_HlhDRwZ9ZI'}
 
 #-------------------------------
 # Work Section
@@ -101,11 +121,8 @@ clients:
 # Contact Section
 
 social:
-- {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
-- {icon: 'dribbble', link: 'https://dribbble.com/travisneilson'}
-- {icon: 'behance', link: 'https://www.behance.net/travisneilson'}
-- {icon: 'youtube', link: 'https://www.youtube.com/DevTipsForDesigners'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/travisneilson/'}
+- {icon: 'youtube', link: 'https://www.youtube.com/channel/UCZMYpMTeHKFsA98k-l8fSzA'}
+- {icon: 'linkedin', link: ''}
 
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
