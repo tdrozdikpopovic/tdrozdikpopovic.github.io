@@ -10,9 +10,9 @@ avatar: "doritar.jpg"
 
 # Colors
 
-accent: "#c99065"
+accent: "#E1C2E1"
 
 textColor: "#666"
 headlineColor: "#333"
 bgcolor: "#e5eaee"
-documentBackgroundColor: "#fff"
+documentBackgroundColor: "rgb(25, 50, 75)"
