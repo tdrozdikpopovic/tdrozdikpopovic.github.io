@@ -29,7 +29,7 @@ module Jekyll
       source = "<div class=\"video\">"
       source += "<figure>"
       # temporary <objects>
-      source += "<object width=\"640\" height=\"480\" src=\"https//www.youtube.com/object/#{@url}\" frameborder=\"0\" allowfullscreen></embed>"
+      source += "<object width=\"640\" height=\"480\" data=\"https//www.youtube.com/object/#{@url}\" frameborder=\"0\" allowfullscreen></object>"
       source += "</figure>"
       source += "</div>"
       source
