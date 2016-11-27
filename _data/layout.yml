@@ -12,7 +12,7 @@ avatar: "doritar.jpg"
 
 accent: "#E1C2E1"
 
-textColor: "#666"
+textColor: "#7CC"
 headlineColor: "#333"
-bgcolor: "#e5eaee"
+bgcolor: "lightslategrey"
 documentBackgroundColor: "rgb(25, 50, 75)"
