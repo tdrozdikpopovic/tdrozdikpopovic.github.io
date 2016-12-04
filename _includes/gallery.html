@@ -1,0 +1,34 @@
+<section class="section-gallery">
+
+  <h3 id="gallery">Gallery</h3>
+
+  <div class="gallery-belt">
+
+    <div class="thumb-wrap">
+      <div class="thumb-container">
+      {% for project in site.data.settings.projects %}
+      <label for="{{ project.folder }}">
+        <div class="thumb-unit" data-folder="{{ project.folder }}">
+            <img id="{{ project.folder }}" class="myImg" src="assets/img/gallery/{{project.folder}}/thumb.jpg" alt="{{ project.name }}" />
+        </div>
+
+      </label>
+      {% endfor %}
+    </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span id="img-close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="modalImg">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>

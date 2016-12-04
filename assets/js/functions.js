@@ -1,7 +1,7 @@
 $(function() {
     smoothScroll(300);
-    workBelt();
-    workLoad();
+    galleryBelt();
+    galleryLoad();
     videoStuff();
     clientStuff();
 
@@ -27,25 +27,39 @@ function smoothScroll (duration) {
 }
 
 
-function workBelt() {
-
-  $(".trigger").remove();
-  $(".return").remove();
-
-  $('.thumb-container label').click(function() {
-    $('.work-belt').addClass("slided");
-    $('.work-container').show();
-  });
-
-  $('.work-return').click(function() {
-    $('.work-belt').removeClass("slided");
-    $('.work-container').hide(800);
-  });
+function galleryBelt() {
 
 }
 
+$('.myImg').click(function() {
+    $('#myModal').show()
+    $("body").addClass("modal-open");
+    $('#modalImg').attr("src", $(this).attr("src"));
+});
 
-function  workLoad() {
+$('#myModal').click(function() {
+    $('#myModal').hide()
+    $("body").removeClass("modal-open")
+})
+
+$('#modalImg').click(function() {
+    $('#myModal').hide()
+    $("body").removeClass("modal-open")
+})
+
+$('#img-close').click(function() {
+    $('#myModal').hide()
+    $("body").removeClass("modal-open")
+})
+
+$(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+        $("#myModal").hide();
+        $("body").removeClass("modal-open")
+    }
+});
+
+function galleryLoad() {
 
   $.ajaxSetup({ cache: true });
 
@@ -54,7 +68,7 @@ function  workLoad() {
         newTitle = $this.find('strong').text(),
         newFolder = $this.find('.thumb-unit').data('folder'),
         spinner = '<div class="loader">Loading...</div>',
-        newHTML = 'work/'+ newFolder;
+        newHTML = 'gallery/'+ newFolder;
 
     $('.project-load').html(spinner).load(newHTML);
     $('.project-title').text(newTitle);

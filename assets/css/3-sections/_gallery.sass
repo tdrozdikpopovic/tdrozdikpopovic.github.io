@@ -1,4 +1,4 @@
-.section-work
+.section-gallery
   overflow-x: hidden
   padding: 100px
 
@@ -7,7 +7,7 @@
   display: none
 
 @each $proj in $projects
-  ##{$proj}:checked ~ .work-belt .work-wrap .work-container noscript #content-#{$proj}
+  ##{$proj}:checked ~ .gallery-belt .gallery-wrap .gallery-container noscript #content-#{$proj}
     display: block
 
 .return
@@ -16,14 +16,14 @@
 .trigger
   display: none
 
-  &:checked ~ .work-belt
+  &:checked ~ .gallery-belt
     left: -100%
 
-    .work-wrap .work-container
+    .gallery-wrap .gallery-container
       display: block
 /* End of gross / hackey CSS */
 
-.work-belt
+.gallery-belt
   width: 200%
   position: relative
   left: 0%
@@ -32,7 +32,7 @@
   &.slided
     +transform(translate3d(-50%, 0, 0))
 
-.thumb-wrap, .work-wrap
+.thumb-wrap, .gallery-wrap
   width: 50%
   float: left
 
@@ -88,7 +88,7 @@
         @extend %#{$animation}
 
 
-.work-container
+.gallery-container
   max-width: 600px
   margin: 0px auto
   padding: 0 15px
@@ -109,7 +109,7 @@
     max-width: 100%
     margin-bottom: 20px
 
-  .work-return
+  .gallery-return
     +size(40px)
     cursor: pointer
     opacity: 0.5
@@ -124,10 +124,84 @@
 
 
 @media (max-width: 740px)
-  .work-container
+  .gallery-container
 
-    .work-return
+    .gallery-return
       left: 0px
 
     h4
       margin-left: 60px
+
+
+.myImg
+  border-radius: 5px
+  cursor: pointer
+  transition: 0.3s
+
+.myImg:hover
+  opacity: 0.7
+
+.modal
+  display: none
+  position: fixed
+  z-index: 100
+  padding-top: 100px
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.9)
+
+
+/* Modal Content (Image) */
+.modal-content
+  margin: auto
+  display: block
+  width: 80%
+  max-width: 700px
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption
+  margin: auto
+  display: block
+  width: 80%
+  max-width: 700px
+  text-align: center
+  color: #ccc
+  padding: 10px 0
+  height: 150px
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption
+  -webkit-animation-name: zoom
+  -webkit-animation-duration: 0.6s
+  animation-name: zoom
+  animation-duration: 0.6s
+
+/* The Close Button */
+#img-close
+  position: absolute
+  top: 15px
+  right: 35px
+  color: #f1f1f1
+  font-size: 40px
+  font-weight: bold
+  transition: 0.3s
+
+
+#img-close:hover, #img-close:focus
+  color: #bbb
+  text-decoration: none
+  cursor: pointer
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px)
+  .modal-content
+    width: 100%
+
+body.modal-open
+  overflow: hidden
