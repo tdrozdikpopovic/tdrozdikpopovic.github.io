@@ -40,40 +40,27 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Teodora specializes** in moving the **audience**.
-  Most of the things he makes are [digital interfaces](http://travisneilson.com){:target="_blank"},
-  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson){:target="_blank"}
-  and [YouTube videos](http://youtube.com/user/devtipsfordesigners){:target="_blank"} about making codes happen.
+  **Teodora** is a Serbian born Mezzo-Soprano, living in the Netherlands.
 
 
-skills:
-- {name: Communication, value: '9'}
-- {name: Organization, value: '7'}
-- {name: Learning, value: '10'}
-- {name: Teaching, value: '6'}
-- {name: Planning, value: '7'}
-- {name: Visual Design, value: '5'}
-- {name: UX Design, value: '8'}
-- {name: Programming, value: '6'}
+# skills:
+# - {name: Communication, value: '9'}
+# - {name: Organization, value: '7'}
+# - {name: Learning, value: '10'}
+# - {name: Teaching, value: '6'}
+# - {name: Planning, value: '7'}
+# - {name: Visual Design, value: '5'}
+# - {name: UX Design, value: '8'}
+# - {name: Programming, value: '6'}
 
 #-------------------------------
 # Videos Section
 
 videos:
-- {title: 'This is a longer title explaining what you are about to see',
-   url: 'hkwbUn5KypA'}
-- {title: 'This is a longer title explaining what you are about to see',
+- {title: 'P. I. Tchaikovsky: Was I Not a Little Blade of Grass',
    url: 'ctlY8VfuS3E'}
-- {title: 'This is a longer title explaining what you are about to see',
-   url: 'dqXJ_iDSoDg'}
-- {title: 'This is a longer title explaining what you are about to see',
-   url: 'aOawmCeS4UI'}
-- {title: 'This is a longer title explaining what you are about to see',
-   url: 'B1S-zbhxde0'}
-- {title: 'This is a longer title explaining what you are about to see',
-   url: 'Jt0AYvP7Yqw'}
-- {title: 'This is a longer title explaining what you are about to see',
-   url: '_HlhDRwZ9ZI'}
+- {title: 'Alexey Verstovsky: Stari Muzh',
+   url: '7ZMOmua3pFY'}
 
 #-------------------------------
 # Gallery Section
@@ -95,26 +82,18 @@ projects:
 # Clients Section
 
 clients:
-- {avatar: 'face-aaroni.jpg',
-  name: 'Scott Summers',
+- {
   title: 'Director of Design, OnToText Ind.',
-  quote: '<p><strong>While we all felt that Travis was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often.</p>',
-  logo: 'logo1.png'}
-- {avatar: 'face-atariboy.jpg',
-  name: 'Hank McCoy',
-  title: 'Eater of Salad, Antartica Int.',
-  quote: '<p><strong>Working with Travis was the highlight of my career.</strong> Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying "uh huh, and then what?" 30 times in a row to my girlfriend without her noticing.</p>',
-  logo: 'logo2.png'}
-- {avatar: 'face-jackiesaik.jpg',
-  name: 'Stacy Lang',
-  title: 'Social Media Girl, Quebec Int.',
-  quote: '<p><strong>Yea, I guess hes good at computers or something,</strong> but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?</p>',
-  logo: 'logo3.png'}
-- {avatar: 'face-teleject.jpg',
-  name: 'Cleatus Cassidy',
-  title: 'VP of Helmut, Lorem Sorem LLC.',
-  quote: '<p><strong>Back in old country</strong> only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework.</p>',
-  logo: 'logo4.png'}
+  quote: '<p>The Serbian born mezzo-soprano, Teodora Drozdik-Popović grew up in Novi Sad, Serbia in a
+family of musicians. She performed solo from a very young age singing, reciting and playing the piano
+in numerous occasions such as competitions, music festivals, television programs - that is how her
+love for music and performing began. Before pursuing her singing ambitions, she studied Hungarian
+language and literature at the Faculty of Philosophy in Novi Sad for which she holds a master’s degree.
+During her final year, she started taking classical singing lessons in the class of M. A. Senka
+Nedeljković. Two years later, Teodora became a student at Codarts, Rotterdam with Carolyn
+Watkinson as her mentor. She graduated in March 2016 in the class of Charlotte Riedijk. Currently,
+she is a first year master student at the Maastricht Conservatory in the class of Axel Everaert.</p>',
+  logo: 'uns.png'}
 
 
 #-------------------------------
