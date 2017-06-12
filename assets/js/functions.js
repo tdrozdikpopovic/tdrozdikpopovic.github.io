@@ -31,21 +31,49 @@ function galleryBelt() {
 
 }
 
+$('.prev-pic').click(function() {
+    var num = parseInt($('#modalImg').attr("src").replace(/\D+/g, ''), 10);
+    if (num > 1) {
+        $('#modalImg').attr("src",  $('#modalImg').attr("src").replace(/\d+/g, num - 1));
+        $('.next-pic').show()
+    } else {
+        $('.prev-pic').hide()
+    }
+});
+
+$('.next-pic').click(function() {
+    var num = parseInt($('#modalImg').attr("src").replace(/\D+/g, ''), 10);
+    if (num < 8) {
+        $('#modalImg').attr("src",  $('#modalImg').attr("src").replace(/\d+/g, num + 1));
+        $('.prev-pic').show()
+    } else {
+        $('.next-pic').hide()
+    }
+});
+
+
 $('.myImg').click(function() {
     $('#myModal').show()
     $("body").addClass("modal-open");
     $('#modalImg').attr("src", $(this).attr("src"));
+    var num = parseInt($(this).attr("src").replace(/\D+/g, ''), 10);
+    console.log("nnnnnn", num)
+    if (num == 1) {
+        $('.prev-pic').hide()
+    } else if (num == 8) {
+        $('.next-pic').hide()
+    }
 });
 
-$('#myModal').click(function() {
-    $('#myModal').hide()
-    $("body").removeClass("modal-open")
-})
+// $('#myModal').click(function() {
+//     $('#myModal').hide()
+//     $("body").removeClass("modal-open")
+// })
 
-$('#modalImg').click(function() {
-    $('#myModal').hide()
-    $("body").removeClass("modal-open")
-})
+// $('#modalImg').click(function() {
+//     $('#myModal').hide()
+//     $("body").removeClass("modal-open")
+// })
 
 $('#img-close').click(function() {
     $('#myModal').hide()
