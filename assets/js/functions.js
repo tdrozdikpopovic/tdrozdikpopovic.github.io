@@ -3,9 +3,9 @@ $(function() {
     galleryBelt();
     galleryLoad();
     videoStuff();
-    clientStuff();
+    biographyStuff();
 
-    $("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '54px' });
+    $("header h1").fitText(1, { minFontSize: '15px', maxFontSize: '20px' });
     $(".biglink").fitText(1.5);
 
     $('textarea').autosize();
@@ -153,43 +153,43 @@ function videoStuff() {
 
 }
 
-function clientStuff() {
+function biographyStuff() {
 
-  $('.client-logo, .client-button').click(function() {
+  $('.biography-logo, .biography-button').click(function() {
     var $this = $(this),
         position = $this.parent().children().index($this);
 
-    $('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
-    $('.client-logo').removeClass('active-client').eq(position).addClass('active-client');
-    $('.client-button').removeClass('active-client').eq(position).addClass('active-client');
+    $('.biography-unit').removeClass('active-biography').eq(position).addClass('active-biography');
+    $('.biography-logo').removeClass('active-biography').eq(position).addClass('active-biography');
+    $('.biography-button').removeClass('active-biography').eq(position).addClass('active-biography');
   });
 
 
-  $('.client-control-next, .client-control-prev').click(function() {
+  $('.biography-control-next, .biography-control-prev').click(function() {
 
     var $this = $(this),
-        curActiveClient = $('.clients-belt').find('.active-client'),
-        position = $('.clients-belt').children().index(curActiveClient),
-        clientNum = $('.client-unit').length;
+        curActiveBiography = $('.biography-belt').find('.active-biography'),
+        position = $('.biography-belt').children().index(curActiveBiography),
+        biographyNum = $('.biography-unit').length;
 
-      if($this.hasClass('client-control-next')) {
+      if($this.hasClass('biography-control-next')) {
 
-        if(position < clientNum -1){
-          $('.active-client').removeClass('active-client').next().addClass('active-client');
+        if(position < biographyNum -1){
+          $('.active-biography').removeClass('active-biography').next().addClass('active-biography');
         } else {
-          $('.client-unit').removeClass('active-client').first().addClass('active-client');
-          $('.client-logo').removeClass('active-client').first().addClass('active-client');
-          $('.client-button').removeClass('active-client').first().addClass('active-client');
+          $('.biography-unit').removeClass('active-biography').first().addClass('active-biography');
+          $('.biography-logo').removeClass('active-biography').first().addClass('active-biography');
+          $('.biography-button').removeClass('active-biography').first().addClass('active-biography');
         }
 
       } else {
 
         if (position === 0) {
-          $('.client-unit').removeClass('active-client').last().addClass('active-client');
-          $('.client-logo').removeClass('active-client').last().addClass('active-client');
-          $('.client-button').removeClass('active-client').last().addClass('active-client');
+          $('.biography-unit').removeClass('active-biography').last().addClass('active-biography');
+          $('.biography-logo').removeClass('active-biography').last().addClass('active-biography');
+          $('.biography-button').removeClass('active-biography').last().addClass('active-biography');
         } else {
-          $('.active-client').removeClass('active-client').prev().addClass('active-client');
+          $('.active-biography').removeClass('active-biography').prev().addClass('active-biography');
         }
 
       }

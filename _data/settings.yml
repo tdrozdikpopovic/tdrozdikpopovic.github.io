@@ -11,7 +11,7 @@ menu:
 - {name: About Me, url: '#about-me'}
 - {name: Videos, url: '#videos'}
 - {name: Gallery, url: '#gallery'}
-- {name: Clients, url: '#clients'}
+- {name: Biography, url: '#biography'}
 - {name: Contact, url: '#contact'}
 
 #-------------------------------
@@ -40,7 +40,7 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Teodora** is a Serbian born Mezzo-Soprano, living in the Netherlands.
+  **Teodora Drozdik-Popović** </br> is a Serbian born **Mezzo-Soprano**, living in the Netherlands.
 
 
 # skills:
@@ -57,8 +57,10 @@ blurb: >
 # Videos Section
 
 videos:
-- {title: 'P. I. Tchaikovsky: Was I Not a Little Blade of Grass',
-   url: 'ctlY8VfuS3E'}
+- {title: 'Luciano Berio: Folk Songs',
+   url: 'AxA09gZTXr8'}
+- {title: 'L. Bernstein: I am easily assimilated',
+   url: 'UZvuKOTTeSE'}
 - {title: 'Alexey Verstovsky: Stari Muzh',
    url: '7ZMOmua3pFY'}
 
@@ -79,20 +81,26 @@ projects:
 
 
 #-------------------------------
-# Clients Section
+# Biography Section
 
-clients:
+biography:
 - {
   title: 'Director of Design, OnToText Ind.',
-  quote: '<p>The Serbian born mezzo-soprano, Teodora Drozdik-Popović grew up in Novi Sad, Serbia in a
-family of musicians. She performed solo from a very young age singing, reciting and playing the piano
-in numerous occasions such as competitions, music festivals, television programs - that is how her
-love for music and performing began. Before pursuing her singing ambitions, she studied Hungarian
-language and literature at the Faculty of Philosophy in Novi Sad for which she holds a master’s degree.
-During her final year, she started taking classical singing lessons in the class of M. A. Senka
-Nedeljković. Two years later, Teodora became a student at Codarts, Rotterdam with Carolyn
-Watkinson as her mentor. She graduated in March 2016 in the class of Charlotte Riedijk. Currently,
-she is a first year master student at the Maastricht Conservatory in the class of Axel Everaert.</p>',
+  quote: '<p>The Serbian born mezzo-soprano, Teodora Drozdik-Popović grew up in Novi Sad, Serbia in
+a family of musicians. Before pursuing her singing ambitions, she studied Hungarian
+language and literature at the Faculty of Philosophy in Novi Sad for which she holds a
+master’s degree.</p><p>In 2012 Teodora began her bachelor in classical singing at Codarts,
+Rotterdam with Carolyn Watkinson. She graduated in March 2016 in the class of Charlotte
+Riedijk. Currently, she is a second year master student at the Maastricht Conservatory in the
+class of Axel Everaert.</p><p>Teodora is mostly concentrating on opera and lied repertoire. She
+gave solo recitals with her duo partner in Serbia, Belgium and The Netherlands. On stage
+she appeared in roles such as Componist (Ariadne auf Naxos), Amadigi (Amadigi di Gaula),
+Elsa (Faust-opera pastiche), Zelatrice (Suor Angelica), Dritte Dame and Dritter Knabe (Die
+Zauberflöte), The Old Lady (Candide-concertante). </p> She participated
+in master classes given by Damien Guillon, Roberta Alexander, Maria Acda, Renate Behle,
+Maria Riccarda Wesseling and Claron McFadden. </p><p> She won the first prize on De Stem van
+Haarlem competition, the first prize and special prize for interpretation at the “Vera Kovač
+Vitkai” competition and was the finalist of the Prix d’Harmonie competition. </p>',
   logo: 'uns.png'}
 
 

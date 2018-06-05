@@ -1,0 +1,35 @@
+<section class="section-biography">
+
+  <h3 id="biography">Biography</h3>
+
+  <div class="biography-mobile-nav">
+    {% for biography in site.data.settings.biography %}
+        <span class="biography-button {% if forloop.first %}active-biography{% endif %}"></span>
+    {% endfor %}
+  </div>
+
+  <div class="biography-belt">
+    {% for biography in site.data.settings.biography %}
+      <div class="biography-unit {% if forloop.first %}active-biography{% endif %}">
+
+        <div class="biography-content">
+          <div class="biography-quote-mark">{% include icons/icon-quote-mark.html %}</div>
+          {{ biography.quote }}
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+
+  <div class="biography-controls">
+    <div class="biography-control-next">{% include icons/icon-next.html %}</div>
+    <div class="biography-control-prev">{% include icons/icon-prev.html %}</div>
+  </div>
+
+  <div class="biography-logos">
+    {% for biography in site.data.settings.biography %}
+        <img class="biography-logo {% if forloop.first %}active-biography{% endif %}" src="assets/img/biography/{{ biography.logo }}" align="{{ biography.logo }}">
+    {% endfor %}
+  </div>
+
+</section>

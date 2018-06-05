@@ -1,22 +1,22 @@
-.section-clients
+.section-biography
   position: relative
 
-.clients-belt
+.biography-belt
   width: 100%
   position: relative
 
-  .client-unit
+  .biography-unit
     max-width: 750px
     margin: 50px auto
     position: relative
     z-index: 1
     display: none
 
-    &.active-client
+    &.active-biography
       +display(flex)
       @extend %#{$animation}
 
-    .client-face
+    .biography-face
       min-width: 180px
       text-align: center
 
@@ -25,18 +25,18 @@
         border-radius: 50%
 
 
-      .client-name
+      .biography-name
         display: block
         text-transform: uppercase
         font-weight: 400
         letter-spacing: 1px
 
-      .client-title
+      .biography-title
         font-style: normal
         font-size: 12px
         color: #999
 
-    .client-content
+    .biography-content
       font-size: 18px
       line-height: 36px
       font-weight: 300
@@ -47,7 +47,7 @@
 
 
 // Logos
-.clients-logos
+.biography-logos
   position: relative
   z-index: 3
   max-width: 750px
@@ -57,19 +57,19 @@
   +justify-content(space-around)
 
 
-  .client-logo
+  .biography-logo
     cursor: pointer
     margin: 0 20px 20px
     padding-bottom: 20px
     border-bottom: 4px solid transparent
     opacity: 0.5
 
-    &.active-client
+    &.active-biography
       opacity: 1
       border-bottom: 4px solid $accent
 
 
-.client-quote-mark
+.biography-quote-mark
   +position(absolute, -18px null null -15px)
   +size(60px)
   z-index: -1
@@ -81,7 +81,7 @@
 
 
 // Controls
-.client-controls
+.biography-controls
   +position(absolute, 0px 0px 0px 0px)
   z-index: 2
 
@@ -93,14 +93,14 @@
     path
       fill: $accent
 
-  .client-control-next
+  .biography-control-next
     +position(absolute, 50% 10px null null)
 
-  .client-control-prev
+  .biography-control-prev
     +position(absolute, 50% null null 10px)
 
-// clients-mobile-nav
-.clients-mobile-nav
+// biography-mobile-nav
+.biography-mobile-nav
   text-align: center
   position: relative
   z-index: 3
@@ -114,43 +114,43 @@
     margin: 0px 10px
     cursor: pointer
 
-    &.active-client
+    &.active-biography
       border-color: $accent
 
 
 
 
 @media (max-width: 850px)
-  .clients-logos
+  .biography-logos
     +flex-wrap(wrap)
 
-  .clients-belt
+  .biography-belt
     overflow-x: hidden
 
-    .client-unit.active-client
+    .biography-unit.active-biography
       display: block
       position: relative
       margin-left: auto
       left: auto
 
-      .client-face
+      .biography-face
         margin-bottom: 30px
 
-      .client-content
+      .biography-content
         padding: 0px 30px
         max-width: 400px
         margin: 0px auto
 
-      .client-quote-mark
+      .biography-quote-mark
         left: 6px
 
-  .clients-logos
+  .biography-logos
     display: none
 
-  .clients-mobile-nav
+  .biography-mobile-nav
     display: block
 
 
 @media (max-width: 600px)
-  .client-controls
+  .biography-controls
     display: none
