@@ -20,7 +20,7 @@ menu:
 # NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
-  description: 'Teodora Drozdik-Popović is a Serbian born Mezzo-soprano, living in the Netherlands. Also interested in data science.'
+  description: 'Teodora Drozdik-Popović is a Serbian born mezzo-soprano, living in the Netherlands. Also interested in data science.'
   rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
   rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
 
@@ -41,7 +41,7 @@ seo:
 
 blurb: >
   **Teodora Drozdik-Popović**
-  is a Serbian born **Mezzo-soprano**, living in the Netherlands.
+  is a Serbian born **mezzo-soprano**, living in the Netherlands.
 
 
 # skills:
@@ -58,10 +58,11 @@ blurb: >
 # Videos Section
 
 videos:
-- {title: 'Luciano Berio: Folk Songs',
-   url: 'AxA09gZTXr8'}
 - {title: 'L. Bernstein: I am easily assimilated',
    url: 'UZvuKOTTeSE'}
+
+- {title: 'Luciano Berio: Folk Songs',
+   url: 'AxA09gZTXr8'}
 
 #-------------------------------
 # Gallery Section
