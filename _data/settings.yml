@@ -20,7 +20,7 @@ menu:
 # NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
-  description: 'Teodora Drozdik-Popović is a Serbian born Mezzo-Soprano, living in the Netherlands. Also interested in data science.'
+  description: 'Teodora Drozdik-Popović is a Serbian born Mezzo-soprano, living in the Netherlands. Also interested in data science.'
   rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
   rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
 
@@ -41,7 +41,7 @@ seo:
 
 blurb: >
   **Teodora Drozdik-Popović**
-  is a Serbian born **Mezzo-Soprano**, living in the Netherlands.
+  is a Serbian born **Mezzo-soprano**, living in the Netherlands.
 
 
 # skills:
@@ -62,8 +62,6 @@ videos:
    url: 'AxA09gZTXr8'}
 - {title: 'L. Bernstein: I am easily assimilated',
    url: 'UZvuKOTTeSE'}
-- {title: 'Alexey Verstovsky: Stari Muzh',
-   url: '7ZMOmua3pFY'}
 
 #-------------------------------
 # Gallery Section
@@ -98,7 +96,7 @@ gave solo recitals with her duo partner in Serbia, Belgium and The Netherlands. 
 she appeared in roles such as Componist (Ariadne auf Naxos), Amadigi (Amadigi di Gaula),
 Elsa (Faust-opera pastiche), Zelatrice (Suor Angelica), Dritte Dame and Dritter Knabe (Die
 Zauberflöte), The Old Lady (Candide-concertante). </p> She participated
-in master classes given by Damien Guillon, Roberta Alexander, Maria Acda, Renate Behle,
+in master classes given by Damien Guillon, Roberta Alexander, Maria Acda, Renate Behlle,
 Maria Riccarda Wesseling and Claron McFadden. </p><p> She won the first prize on De Stem van
 Haarlem competition, the first prize and special prize for interpretation at the “Vera Kovač
 Vitkai” competition and was the finalist of the Prix d’Harmonie competition. </p>',
@@ -111,6 +109,7 @@ Vitkai” competition and was the finalist of the Prix d’Harmonie competition.
 social:
 - {icon: 'youtube', link: 'https://www.youtube.com/channel/UCZMYpMTeHKFsA98k-l8fSzA'}
 - {icon: 'linkedin', link: ''}
+- {icon: 'instagram', link: 'https://www.instagram.com/teodora_drozdikpopovic'}
 
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
